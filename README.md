@@ -33,7 +33,17 @@ subtract(-1, 5);         // returns -6
 subtract(2.5, 3.25);     // returns -0.75
 ```
 
-3. Write a function that takes in an integer and returns the square value of that integer.
+3. Write a function that takes in two numbers and multiples them together and returns the product. 
+
+Examples:
+```
+multiply(1, 2);          // returns 2
+multiply(8, 2);          // returns 16
+multiply(-1, 5);         // returns -5
+multiply(2.5, 3.25);     // returns 8.125
+```
+
+4. Write a function that takes in an integer and returns the square value of that integer.
 
 Examples:
 ```
@@ -43,7 +53,7 @@ square(10);       // returns 100
 square(7);        // returns 49
 ```
 
-4. Write a function that takes in an integer and returns the square root of that integer.
+5. Write a function that takes in an integer and returns the square root of that integer.
 
 Examples:
 ```
@@ -53,7 +63,7 @@ squareRoot(100);       // returns 10
 squareRoot(49);        // returns 7
 ```
 
-5. Write a function that takes in a name and returns a new string that starts with `Hello,` followed by the name and ends with an exclamation point `!`.
+6. Write a function that takes in a name and returns a new string that starts with `Hello,` followed by the name and ends with an exclamation point `!`.
 
 Examples:
 ```
@@ -63,7 +73,7 @@ greet("fellows");   // returns "Hello, fellows!"
 greet("Maya");      // returns "Hello, Maya!"
 ```
 
-6. Write a function that takes in a name and returns a new string that starts with `Goodbye,` followed by the name and then a period.
+7. Write a function that takes in a name and returns a new string that starts with `Goodbye,` followed by the name and then a period.
 
 Examples:
 ```
@@ -73,7 +83,17 @@ goodbye("fellows");   // returns "Goodbye, fellows."
 goodbye("Maya");      // returns "Goodbye, Maya."
 ```
 
-7. Write a function that takes in a number of hours and returns how many minutes that equates to. 
+8. Write a function that takes in a name and returns a new string that asks them what the time is.
+
+Examples:
+```
+askTime("Ann");       // returns "Ann, do you know what time it is?"
+askTime("Reuben");    // returns "Reuben, do you know what time it is?"
+askTime("fellows");   // returns "fellows, do you know what time it is?"
+askTime("Maya");      // returns "Maya, do you know what time it is?"
+```
+
+9. Write a function that takes in a number of hours and returns how many minutes that equates to. 
 
 Examples: 
 ```
@@ -83,7 +103,7 @@ convertToMinutes(1);       // returns 60
 convertToMinutes(100);     // returns 6000
 ```
 
-8. Write a function that takes a numeric temperature in Fahrenheit and converts it to Celsius. 
+10. Write a function that takes a numeric temperature in Fahrenheit and converts it to Celsius. 
 
 Examples: 
 ```
@@ -93,7 +113,18 @@ fahrenheitToCelsius(50);    // returns 10
 fahrenheitToCelsius(140);   // returns 60
 ```
 
-9. Write a function that takes a number and returns a boolean value that represents whether or not the number is a positive value. However, the number `0` is neither positive nor negative, so instead of returning a boolean, return value `null`.
+11. Write a function that takes a number and returns the absolute value of that number.
+
+Examples:
+```
+absoluteValue(1);         // returns 1
+absoluteValue(99);        // returns 99
+absoluteValue(-99);       // returns 99
+absoluteValue(-5);        // returns 5
+absoluteValue(0);         // returns 0
+```
+
+12. Write a function that takes a number and returns a boolean value that represents whether or not the number is a positive value. However, the number `0` is neither positive nor negative, so instead of returning a boolean, return value `null`.
 
 Examples:
 ```
@@ -103,7 +134,7 @@ isPositive(-5);        // returns false
 isPositive(0);         // returns null
 ```
 
-10. Write a function that takes in four sides of a quadrilateral shape and returns true if it represents a square such that all fours sides are the same length (are equal in value). Otherwise, it should return false. 
+13. Write a function that takes in four sides of a quadrilateral shape and returns true if it represents a square such that all fours sides are the same length (are equal in value). Otherwise, it should return false. 
 
 Examples:
 ```
@@ -113,7 +144,7 @@ isSquare(7, 8, 8, 8);     // returns false
 isSquare(3, 3, 4, 3);     // returns false
 ```
 
-11. Write a function that determined whether or not someone can vote. The first argument represents the person's age in years and the second argument represents whether or not they are a citizen, `true` if they are a citizen and `false` if they are not. The function should return `true` only if the person is a citizen and is 18 years or older. Otherwise, it should return `false`.
+14. Write a function that determined whether or not someone can vote. The first argument represents the person's age in years and the second argument represents whether or not they are a citizen, `true` if they are a citizen and `false` if they are not. The function should return `true` only if the person is a citizen and is 18 years or older. Otherwise, it should return `false`.
 
 Examples:
 ```
@@ -123,7 +154,7 @@ canVote(30, false);    // returns false
 canVote(7, false);     // returns false
 ```
 
-12. Write a function that takes in the age of a person and returns a different message depending on the age of the person. If the person is 12 years old or less, return "You're still a child". If the person is between 13 years old and 18 years old, return "Now you're a teenager". If the person is older than 18 but younger than 65, return "Welcome to adulthood". Finally, if the person is 65 years or older, return "You are a senior citizen". 
+15. Write a function that takes in the age of a person and returns a different message depending on the age of the person. If the person is 12 years old or less, return "You're still a child". If the person is between 13 years old and 18 years old, return "Now you're a teenager". If the person is older than 18 but younger than 65, return "Welcome to adulthood". Finally, if the person is 65 years or older, return "You are a senior citizen". 
 
 Examples:
 ```
@@ -135,7 +166,7 @@ ageGroup(65);     // returns "You are a senior citizen"
 ageGroup(80);     // returns "You are a senior citizen"
 ```
 
-13. Write a function that takes the three angles of a triangle as arguments, and returns one of the following four strings representing the triangle's classification: 'right', 'acute', 'obtuse', or 'invalid'. (Note: Valid triangles have three angles that sum to 180 degrees.) You may assume that all angles have integer values, so you do not have to worry about floating-point errors. You may also assume that the arguments are in degrees.
+16. Write a function that takes the three angles of a triangle as arguments, and returns one of the following four strings representing the triangle's classification: 'right', 'acute', 'obtuse', or 'invalid'. (Note: Valid triangles have three angles that sum to 180 degrees.) You may assume that all angles have integer values, so you do not have to worry about floating-point errors. You may also assume that the arguments are in degrees.
 
 Examples:
 ```
