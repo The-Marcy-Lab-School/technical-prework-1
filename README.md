@@ -117,9 +117,9 @@ fahrenheitToCelsius(140);   // returns 60
 
 Examples:
 ```
+absoluteValue(-99);       // returns 99
 absoluteValue(1);         // returns 1
 absoluteValue(99);        // returns 99
-absoluteValue(-99);       // returns 99
 absoluteValue(-5);        // returns 5
 absoluteValue(0);         // returns 0
 ```
