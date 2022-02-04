@@ -144,7 +144,7 @@ isSquare(7, 8, 8, 8);     // returns false
 isSquare(3, 3, 4, 3);     // returns false
 ```
 
-14. Write a function that determined whether or not someone can vote. The first argument represents the person's age in years and the second argument represents whether or not they are a citizen, `true` if they are a citizen and `false` if they are not. The function should return `true` only if the person is a citizen and is 18 years or older. Otherwise, it should return `false`.
+14. Write a function that determines whether or not someone can vote. The first argument represents the person's age in years and the second argument represents whether or not they are a citizen, `true` if they are a citizen and `false` if they are not. The function should return `true` only if the person is a citizen and is 18 years or older. Otherwise, it should return `false`.
 
 Examples:
 ```
