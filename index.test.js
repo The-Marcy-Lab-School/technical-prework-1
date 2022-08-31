@@ -182,10 +182,10 @@ test('triangle function works for obtuse triangles', () => {
   expect(triangle(15, 50, 115)).toBe("obtuse");
 });
 
-test('triangle function checks for invalide triangles', () => {
+test('triangle function checks for invalid triangles', () => {
+  expect(triangle(50, 50, 50)).toBe("invalid");
+  expect(triangle(10, 15, 200)).toBe("invalid");
   expect(triangle(0, 90, 90)).toBe("invalid");
   expect(triangle(0, 180, 0)).toBe("invalid");
   expect(triangle(0, 100, 80)).toBe("invalid");
-  expect(triangle(50, 50, 50)).toBe("invalid");
-  expect(triangle(10, 15, 200)).toBe("invalid");
 });
