@@ -93,7 +93,6 @@ test('fahrenheitToCelsius function works', () => {
 test('absoluteValue function works for positive numbers', () => {
   expect(absoluteValue(1)).toBe(1);
   expect(absoluteValue(99)).toBe(99);
-  expect(absoluteValue(0)).toBe(0);
   expect(absoluteValue(1.1)).toBe(1.1);
 });
 
