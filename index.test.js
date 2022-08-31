@@ -97,6 +97,10 @@ test('absoluteValue function works for positive numbers', () => {
   expect(absoluteValue(1.1)).toBe(1.1);
 });
 
+test('absoluteValue function works for 0', () => {
+  expect(absoluteValue(0)).toBe(0);
+});
+
 test('absoluteValue function works for negative numbers', () => {
   expect(absoluteValue(-99)).toBe(99);
   expect(absoluteValue(-5)).toBe(5);
