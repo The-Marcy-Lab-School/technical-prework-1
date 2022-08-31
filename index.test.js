@@ -107,6 +107,9 @@ test('isPositive function works for positive numbers', () => {
   expect(isPositive(1)).toBe(true);
   expect(isPositive(1.1)).toBe(true);
   expect(isPositive(99)).toBe(true);
+});
+
+test('isPositive function works for zero', () => {
   expect(isPositive(0)).toBe(null);
 });
 
