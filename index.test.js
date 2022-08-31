@@ -145,13 +145,6 @@ test('canVote function checks if you are the right age', () => {
 test('ageGroup function works for children', () => {
   expect(ageGroup(11)).toBe("You're still a child");
   expect(ageGroup(12)).toBe("You're still a child");
-  expect(ageGroup(13)).toBe("Now you're a teenager");
-  expect(ageGroup(17)).toBe("Now you're a teenager");
-  expect(ageGroup(18)).toBe("Now you're a teenager");
-  expect(ageGroup(19)).toBe("Welcome to adulthood");
-  expect(ageGroup(64)).toBe("Welcome to adulthood");
-  expect(ageGroup(65)).toBe("You are a senior citizen");
-  expect(ageGroup(66)).toBe("You are a senior citizen");
 });
 
 test('ageGroup function works for teenagers', () => {
