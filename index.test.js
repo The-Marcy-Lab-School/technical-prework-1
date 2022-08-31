@@ -17,42 +17,42 @@ const {
   triangle
 } = require('./index');
 
-test('add function works', () => {
+test('add function works as expected', () => {
   expect(add(1, 2)).toBe(3);
   expect(add(8, 2)).toBe(10);
   expect(add(-1, 5)).toBe(4);
   expect(add(2.5, 3.25)).toBe(5.75);
 });
 
-test('subtract function works', () => {
+test('subtract function works as expected', () => {
   expect(subtract(1, 2)).toBe(-1);
   expect(subtract(8, 2)).toBe(6);
   expect(subtract(-1, 5)).toBe(-6);
   expect(subtract(2.5, 3.25)).toBe(-0.75);
 });
 
-test('multiply function works', () => {
+test('multiply function works as expected', () => {
   expect(multiply(1, 2)).toBe(2);
   expect(multiply(8, 2)).toBe(16);
   expect(multiply(-1, 5)).toBe(-5);
   expect(multiply(2.5, 3.25)).toBe(8.125);
 });
 
-test('square function works', () => {
+test('square function returns the original number multipled by itself', () => {
   expect(square(5)).toBe(25);
   expect(square(1)).toBe(1);
   expect(square(-10)).toBe(100);
   expect(square(2.5)).toBe(6.25);
 });
 
-test('squareRoot function works', () => {
+test('squareRoot function returns the square root of the number', () => {
   expect(squareRoot(25)).toBe(5);
   expect(squareRoot(1)).toBe(1);
   expect(squareRoot(100)).toBe(10);
   expect(squareRoot(6.25)).toBe(2.5);
 });
 
-test('greet function works', () => {
+test('greet function matches exactly', () => {
   expect(greet("Ann")).toBe("Hello, Ann!");
   expect(greet("Reuben")).toBe("Hello, Reuben!");
   expect(greet("fellows")).toBe("Hello, fellows!");
@@ -60,7 +60,7 @@ test('greet function works', () => {
   expect(greet("")).toBe("Hello, !");
 });
 
-test('goodbye function works', () => {
+test('goodbye function matches exactly', () => {
   expect(goodbye("Ann")).toBe("Goodbye, Ann.");
   expect(goodbye("Reuben")).toBe("Goodbye, Reuben.");
   expect(goodbye("fellows")).toBe("Goodbye, fellows.");
@@ -68,7 +68,7 @@ test('goodbye function works', () => {
   expect(goodbye("")).toBe("Goodbye, .");
 });
 
-test('askTime function works', () => {
+test('askTime function matches exactly', () => {
   expect(askTime("Ann")).toBe("Ann, do you know what time it is?");
   expect(askTime("Reuben")).toBe("Reuben, do you know what time it is?");
   expect(askTime("fellows")).toBe("fellows, do you know what time it is?");
@@ -76,14 +76,14 @@ test('askTime function works', () => {
   expect(askTime("")).toBe(", do you know what time it is?");
 });
 
-test('convertToMinutes function works', () => {
+test('convertToMinutes function works as expected', () => {
   expect(convertToMinutes(5)).toBe(300);
   expect(convertToMinutes(2.25)).toBe(135);
   expect(convertToMinutes(1)).toBe(60);
   expect(convertToMinutes(100)).toBe(6000);
 });
 
-test('fahrenheitToCelsius function works', () => {
+test('fahrenheitToCelsius function works as expected with no rounding', () => {
   expect(fahrenheitToCelsius(212)).toBe(100);
   expect(fahrenheitToCelsius(32)).toBe(0);
   expect(fahrenheitToCelsius(50)).toBe(10);
@@ -106,22 +106,22 @@ test('absoluteValue function works for negative numbers', () => {
   expect(absoluteValue(-1.1)).toBe(1.1);
 });
 
-test('isPositive function works for positive numbers', () => {
+test('isPositive function returns true for positive numbers', () => {
   expect(isPositive(1)).toBe(true);
   expect(isPositive(1.1)).toBe(true);
   expect(isPositive(99)).toBe(true);
 });
 
-test('isPositive function works for zero', () => {
+test('isPositive function returns null for zero', () => {
   expect(isPositive(0)).toBe(null);
 });
 
-test('isPositive function works for negative numbers', () => {
+test('isPositive function returns false for negative numbers', () => {
   expect(isPositive(-5)).toBe(false);
   expect(isPositive(-5.5)).toBe(false);
 });
 
-test('isSquare function checks for squares', () => {
+test('isSquare function checks for squares and that all values are equal', () => {
   expect(isSquare(6, 6, 6, 6)).toBe(true);
   expect(isSquare(Math.PI, Math.PI, Math.PI, Math.PI)).toBe(true);
 });
@@ -133,7 +133,7 @@ test('isSquare function checks for nonsquares', () => {
   expect(isSquare(3, 3, 3, 4)).toBe(false);
 });
 
-test('canVote function works', () => {
+test('canVote function returns true if the person can vote', () => {
   expect(canVote(21, true)).toBe(true);
   expect(canVote(18, true)).toBe(true);
 });
