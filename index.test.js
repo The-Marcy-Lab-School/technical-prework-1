@@ -96,7 +96,7 @@ test('absoluteValue function works for positive numbers', () => {
   expect(absoluteValue(1.1)).toBe(1.1);
 });
 
-test('absoluteValue function works for 0', () => {
+test('absoluteValue function works for zero', () => {
   expect(absoluteValue(0)).toBe(0);
 });
 
@@ -183,6 +183,7 @@ test('triangle function works for right triangles', () => {
 test('triangle function works for obtuse triangles', () => {
   expect(triangle(120, 50, 10)).toBe("obtuse");
   expect(triangle(15, 50, 115)).toBe("obtuse");
+  expect(triangle(50, 120, 10)).toBe("obtuse");
 });
 
 test('triangle function returns invalid if angles do not add up to 180', () => {
@@ -193,5 +194,5 @@ test('triangle function returns invalid if angles do not add up to 180', () => {
 test('triangle function returns invalid if there is a 0 angle', () => {
   expect(triangle(0, 90, 90)).toBe("invalid");
   expect(triangle(0, 180, 0)).toBe("invalid");
-  expect(triangle(0, 100, 80)).toBe("invalid");
+  expect(triangle(100, 0, 80)).toBe("invalid");
 });
