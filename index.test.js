@@ -90,28 +90,37 @@ test('fahrenheitToCelsius function works', () => {
   expect(fahrenheitToCelsius(140)).toBe(60);
 });
 
-test('absoluteValue function works', () => {
-  expect(absoluteValue(-99)).toBe(99);
+test('absoluteValue function works for positive numbers', () => {
   expect(absoluteValue(1)).toBe(1);
   expect(absoluteValue(99)).toBe(99);
   expect(absoluteValue(0)).toBe(0);
-  expect(absoluteValue(-5)).toBe(5);
-  expect(absoluteValue(-1.1)).toBe(1.1);
   expect(absoluteValue(1.1)).toBe(1.1);
 });
 
-test('isPositive function works', () => {
-  expect(isPositive(-5)).toBe(false);
-  expect(isPositive(-5.5)).toBe(false);
+test('absoluteValue function works for negative numbers', () => {
+  expect(absoluteValue(-99)).toBe(99);
+  expect(absoluteValue(-5)).toBe(5);
+  expect(absoluteValue(-1.1)).toBe(1.1);
+});
+
+test('isPositive function works for positive numbers', () => {
   expect(isPositive(1)).toBe(true);
   expect(isPositive(1.1)).toBe(true);
   expect(isPositive(99)).toBe(true);
   expect(isPositive(0)).toBe(null);
 });
 
-test('isSquare function works', () => {
+test('isPositive function works for negative numbers', () => {
+  expect(isPositive(-5)).toBe(false);
+  expect(isPositive(-5.5)).toBe(false);
+});
+
+test('isSquare function checks for squares', () => {
   expect(isSquare(6, 6, 6, 6)).toBe(true);
   expect(isSquare(Math.PI, Math.PI, Math.PI, Math.PI)).toBe(true);
+});
+
+test('isSquare function checks for nonsquares', () => {
   expect(isSquare(1, 2, 2, 2)).toBe(false);
   expect(isSquare(8, 7, 8, 8)).toBe(false);
   expect(isSquare(8, 8, 9, 8)).toBe(false);
@@ -121,12 +130,19 @@ test('isSquare function works', () => {
 test('canVote function works', () => {
   expect(canVote(21, true)).toBe(true);
   expect(canVote(18, true)).toBe(true);
-  expect(canVote(17, true)).toBe(false);
+});
+
+test('canVote function checks if you are not a citizen', () => {
   expect(canVote(18, false)).toBe(false);
   expect(canVote(17, false)).toBe(false);
 });
 
-test('ageGroup function works', () => {
+test('canVote function checks if you are the right age', () => {
+  expect(canVote(17, true)).toBe(false);
+  expect(canVote(17, false)).toBe(false);
+});
+
+test('ageGroup function works for children', () => {
   expect(ageGroup(11)).toBe("You're still a child");
   expect(ageGroup(12)).toBe("You're still a child");
   expect(ageGroup(13)).toBe("Now you're a teenager");
@@ -138,14 +154,39 @@ test('ageGroup function works', () => {
   expect(ageGroup(66)).toBe("You are a senior citizen");
 });
 
-test('triangle function works', () => {
+test('ageGroup function works for teenagers', () => {
+  expect(ageGroup(13)).toBe("Now you're a teenager");
+  expect(ageGroup(17)).toBe("Now you're a teenager");
+  expect(ageGroup(18)).toBe("Now you're a teenager");
+});
+
+test('ageGroup function works for adults', () => {
+  expect(ageGroup(19)).toBe("Welcome to adulthood");
+  expect(ageGroup(64)).toBe("Welcome to adulthood");
+});
+
+test('ageGroup function works senior citizens', () => {
+  expect(ageGroup(65)).toBe("You are a senior citizen");
+  expect(ageGroup(66)).toBe("You are a senior citizen");
+});
+
+test('triangle function works for acute triangles', () => {
   expect(triangle(60, 70, 50)).toBe("acute");
   expect(triangle(65, 60, 55)).toBe("acute");
+});
+
+test('triangle function works for right triangles', () => {
   expect(triangle(30, 90, 60)).toBe("right");
   expect(triangle(90, 45, 45)).toBe("right");
   expect(triangle(45, 45, 90)).toBe("right");
+});
+
+test('triangle function works for obtuse triangles', () => {
   expect(triangle(120, 50, 10)).toBe("obtuse");
   expect(triangle(15, 50, 115)).toBe("obtuse");
+});
+
+test('triangle function checks for invalide triangles', () => {
   expect(triangle(0, 90, 90)).toBe("invalid");
   expect(triangle(0, 180, 0)).toBe("invalid");
   expect(triangle(0, 100, 80)).toBe("invalid");
