@@ -175,4 +175,5 @@ triangle(30, 90, 60);       // returns "right"
 triangle(120, 50, 10);      // returns "obtuse"
 triangle(0, 90, 90);        // returns "invalid"
 triangle(50, 50, 50);       // returns "invalid"
+triangle(0, 180, 0);        // returns "invalid"
 ```
