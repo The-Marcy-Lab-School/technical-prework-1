@@ -148,10 +148,10 @@ isSquare(3, 3, 4, 3);     // returns false
 
 Examples:
 ```
-canVote(20, true);     // returns true
+canVote(21, true);     // returns true
+canVote(18, true);     // returns true
 canVote(16, true);     // returns false
 canVote(30, false);    // returns false
-canVote(7, false);     // returns false
 ```
 
 15. Write a function that takes in the age of a person and returns a different message depending on the age of the person. If the person is 12 years old or less, return "You're still a child". If the person is between 13 years old and 18 years old, return "Now you're a teenager". If the person is older than 18 but younger than 65, return "Welcome to adulthood". Finally, if the person is 65 years or older, return "You are a senior citizen". 
@@ -159,6 +159,7 @@ canVote(7, false);     // returns false
 Examples:
 ```
 ageGroup(4);      // returns "You're still a child"
+ageGroup(12);      // returns "You're still a child"
 ageGroup(13);     // returns "Now you're a teenager"
 ageGroup(18);     // returns "Now you're a teenager"
 ageGroup(33);     // returns "Welcome to adulthood"
@@ -171,9 +172,10 @@ ageGroup(80);     // returns "You are a senior citizen"
 Examples:
 ```
 triangle(60, 70, 50);       // returns "acute"
+triangle(45, 45, 90);       // returns "right"
 triangle(30, 90, 60);       // returns "right"
 triangle(120, 50, 10);      // returns "obtuse"
-triangle(0, 90, 90);        // returns "invalid"
 triangle(50, 50, 50);       // returns "invalid"
-triangle(0, 180, 0);        // returns "invalid"
+triangle(0, 90, 90);        // returns "invalid"
+triangle(180, 0, 0);        // returns "invalid"
 ```
