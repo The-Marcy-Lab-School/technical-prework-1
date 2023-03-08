@@ -193,6 +193,6 @@ test('triangle function returns invalid if angles do not add up to 180', () => {
 
 test('triangle function returns invalid if there is a 0 angle', () => {
   expect(triangle(0, 90, 90)).toBe("invalid");
-  expect(triangle(0, 180, 0)).toBe("invalid");
+  expect(triangle(180, 0, 0)).toBe("invalid");
   expect(triangle(100, 0, 80)).toBe("invalid");
 });
