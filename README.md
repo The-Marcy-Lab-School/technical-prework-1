@@ -50,7 +50,7 @@ Examples:
 square(5);        // returns 25
 square(1);        // returns 1
 square(10);       // returns 100
-square(7);        // returns 49
+square(2.5);      // returns 6.25
 ```
 
 5. Write a function that takes in an integer and returns the square root of that integer.
@@ -60,7 +60,7 @@ Examples:
 squareRoot(25);        // returns 5
 squareRoot(1);         // returns 1
 squareRoot(100);       // returns 10
-squareRoot(49);        // returns 7
+squareRoot(6.25);      // returns 2.5
 ```
 
 6. Write a function that takes in a name and returns a new string that starts with `Hello,` followed by the name and ends with an exclamation point `!`.
