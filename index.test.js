@@ -133,9 +133,9 @@ test('isSquare function checks for nonsquares', () => {
   expect(isSquare(3, 3, 3, 4)).toBe(false);
 });
 
-test('canVote function returns true if the person can vote', () => {
-  expect(canVote(21, true)).toBe(true);
-  expect(canVote(18, true)).toBe(true);
+test('canVote function checks if you are the right age', () => {
+  expect(canVote(17, true)).toBe(false);
+  expect(canVote(17, false)).toBe(false);
 });
 
 test('canVote function checks if you are not a citizen', () => {
@@ -143,9 +143,9 @@ test('canVote function checks if you are not a citizen', () => {
   expect(canVote(17, false)).toBe(false);
 });
 
-test('canVote function checks if you are the right age', () => {
-  expect(canVote(17, true)).toBe(false);
-  expect(canVote(17, false)).toBe(false);
+test('canVote function returns true if the person can vote', () => {
+  expect(canVote(21, true)).toBe(true);
+  expect(canVote(18, true)).toBe(true);
 });
 
 test('ageGroup function works for children', () => {
