@@ -1,64 +1,64 @@
-function add(a, b){
+const add = (a, b) => {
   return
 }
 
-function subtract(a, b){
+const subtract = (a, b) => {
   return
 }
 
-function multiply(a, b){
+const multiply = (a, b) => {
   return 
 }
 
-function square(num){
+const square = (num) => {
   return
 }
 
-function squareRoot(num){
+const squareRoot = (num) => {
   return 
 }
 
-function greet(name){
+const greet = (name) => {
   return
 }
 
-function goodbye(name){
+const goodbye = (name) => {
   return 
 }
 
-function askTime(name){
+const askTime = (name) => {
   return 
 }
 
-function convertToMinutes(hours){
+const convertToMinutes = (hours) => {
   return 
 }
 
-function fahrenheitToCelsius(fahrenheit){
+const fahrenheitToCelsius = (fahrenheit) => {
   return 
 }
 
-function absoluteValue(num){
+const absoluteValue = (num) => {
   return 
 }
 
-function isPositive(num){
+const isPositive = (num) => {
   return
 }
 
-function isSquare(a, b, c, d){
+const isSquare = (a, b, c, d) => {
   return
 }
 
-function canVote(age, isCitizen){
+const canVote = (age, isCitizen) => {
   return 
 }
 
-function ageGroup(age){
+const ageGroup = (age) => {
   return 
 }
 
-function triangle(a, b, c){
+const triangle = (a, b, c) => {
   return 
 }
 
