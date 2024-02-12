@@ -4,13 +4,18 @@
 
 You will apply what you've learned about JavaScript by implementing various functions. This assignment will demonstrate your code fluency and problem-solving abilities.
 
-0. Open up [this Repl.it](https://replit.com/@Gonzalomarcylab/MarcyLabPreWork1?v=1) in a new tab. Once you open this Repl.it in a new tab, make a personal copy by forking. You should see a blue button in the top right corner that says **Fork repl**. Click on it!
+0. Open up [this Repl.it](https://replit.com/@Gonzalomarcylab/MarcyLabPreWork1?v=1) in a new tab. Once you open this Repl.it in a new tab, make a personal copy by forking. You should see a button in the top right corner that says **Fork & Run**. Click on it!
 1. Once the Repl.it has been forked, you will write all your code in the `index.js` file.
 2. The function signatures have already been created for you. You only need to write the body of each function.
 3. Do not change the names of the functions. However, you can change the name of the function _parameters_ if you'd like.
-4. Each function needs to **return** a specific value. Make sure none of your functions return `undefined`.
-5. **Test your functions by invoking them.** You can `console.log` the invocation of a function to print out its return value. There is a section of code after all functions have been declared where you can test your code.
+4. Each function needs to `return` a specific value. Make sure none of your functions return `undefined`.
+
+> **Note:** Using `console.log()` is not the same as using `return`. `console.log()` only logs a value to the console, which you can use for testing, more on that in a bit. Unless the directions ask you to use `console.log()`, your functions should end with a `return` statement.
+
+5. **Test your functions by invoking them.** You can `console.log()` the invocation of a function to print out its return value. There is a section of code after all functions have been declared where you can test your code.
 6. When you are finished, submit the URL of your Repl.it to Canvas.
+
+Happy coding! - MLS Instructors
 
 ## Coding Problems
 
@@ -175,7 +180,7 @@ Examples:
 
 ```js
 ageGroup(4);      // returns "You're still a child"
-ageGroup(12);      // returns "You're still a child"
+ageGroup(12);     // returns "You're still a child"
 ageGroup(13);     // returns "Now you're a teenager"
 ageGroup(18);     // returns "Now you're a teenager"
 ageGroup(33);     // returns "Welcome to adulthood"
