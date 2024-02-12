@@ -1,4 +1,4 @@
-# The Marcy Lab School Pre-work Technical Problem set 1
+# The Marcy Lab School Technical Pre-work Problem set 1
 
 ## Directions
 
