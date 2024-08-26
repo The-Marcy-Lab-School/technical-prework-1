@@ -6,7 +6,7 @@ You will apply what you've learned about JavaScript by implementing various func
 
 0. Open up [this Repl.it](https://replit.com/@Gonzalomarcylab/MarcyLabPreWork1?v=1) in a new tab. Once you open this Repl.it in a new tab, make a personal copy by forking. You should see a button in the top right corner that says **Fork & Run**. Click on it!
 1. Once the Repl.it has been forked, you will write all your code in the `index.js` file.
-2. The function signatures have already been created for you. You only need to write the body of each function.
+2. The function "signatures" (the function name and parameter names) have already been created for you. You only need to write the "body" of each function.
 3. Do not change the names of the functions. However, you can change the name of the function _parameters_ if you'd like.
 4. Each function needs to `return` a specific value. Make sure none of your functions return `undefined`.
 
