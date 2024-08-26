@@ -101,10 +101,10 @@ goodbye("Maya");      // returns "Goodbye, Maya."
 Examples:
 
 ```js
-askTime("Ann");       // returns "Ann, do you know what time it is?"
-askTime("Reuben");    // returns "Reuben, do you know what time it is?"
-askTime("fellows");   // returns "fellows, do you know what time it is?"
-askTime("Maya");      // returns "Maya, do you know what time it is?"
+askTime("Ann");       // returns "Hey Ann, do you know what time it is?"
+askTime("Reuben");    // returns "Hey Reuben, do you know what time it is?"
+askTime("fellows");   // returns "Hey fellows, do you know what time it is?"
+askTime("Maya");      // returns "Hey Maya, do you know what time it is?"
 ```
 
 9. Write a function that takes in a number of hours and returns how many minutes that equates to.
